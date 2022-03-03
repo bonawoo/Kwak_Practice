@@ -1,0 +1,7 @@
+﻿  Day2.cpp
+c:\users\user\desktop\kwak_practice\day2\day2\day2\day2.cpp(131): warning C4101: 'p' :참조되지 않은 지역 변수입니다.
+c:\users\user\desktop\kwak_practice\day2\day2\day2\day2.cpp(40): warning C4101: 'char1' :참조되지 않은 지역 변수입니다.
+c:\users\user\desktop\kwak_practice\day2\day2\day2\day2.cpp(132): warning C4101: 'q' :참조되지 않은 지역 변수입니다.
+c:\users\user\desktop\kwak_practice\day2\day2\day2\day2.cpp(133): warning C4101: 'r' :참조되지 않은 지역 변수입니다.
+c:\users\user\desktop\kwak_practice\day2\day2\day2\day2.cpp(133): warning C4101: 'o' :참조되지 않은 지역 변수입니다.
+  Day2.vcxproj -> C:\Users\User\Desktop\Kwak_Practice\Day2\Day2\Debug\Day2.exe
