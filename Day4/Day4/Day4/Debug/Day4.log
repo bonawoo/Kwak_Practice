@@ -1,0 +1,6 @@
+﻿  Day4.cpp
+c:\users\user\desktop\kwak_practice\day4\day4\day4\day4.cpp(29): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\user\desktop\kwak_practice\day4\day4\day4\day4.cpp(73): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\user\desktop\kwak_practice\day4\day4\day4\day4.cpp(74): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\user\desktop\kwak_practice\day4\day4\day4\day4.cpp(35): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
+  Day4.vcxproj -> C:\Users\User\Desktop\Kwak_Practice\Day4\Day4\Debug\Day4.exe
