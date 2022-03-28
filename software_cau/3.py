@@ -1,14 +1,11 @@
-import turtle
-t = turtle.Pen()
+#짝수/홀수 맞추기
+num = int(input("숫자를 입력하세요 : "))
+if num % 2:
+    print("홀수입니다")
+if num % 2 - 1:
+    print("짝수입니다")
 
-width = int(input("사각형의 가로길이를 입력하세요 : "))
-height = int(input("사각형의 세로길이를 입력하세요 : "))
+#논리 연산자
+#and, or, not(!)
 
-t.forward(width)
-t.right(90)
-t.forward(height)
-t.right(90)
-t.forward(width)
-t.right(90)
-t.forward(height)
-t.right(90)
+
