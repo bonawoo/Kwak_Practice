@@ -1,24 +1,36 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int N;
-int board[1010];
-int dp[1010];
+int N,T;
+int board[2][100010];
+int dp[2][100010];
 
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cin >> N;
-    for(int i=1; i<=N; i++){
-        cin >> board[i];
-    }
-    dp[1] = board[1];
-    for(int i=2;i<=N;i++){
-        dp[i] = board[i];
-        for(int j=1;j<=i/2;j++){
-            dp[i] = max(dp[i], dp[i-j] + board[j]);
+    for(int i=0; i<N; i++){
+        int mx = 0;
+        
+        cin >> T;
+        for(int i=0; i<T; i++){
+            cin >> board[0][i];
+            dp[0][i] = 0;
         }
+        for(int i=0; i<T; i++){
+            cin >> board[1][i];
+            dp[0][i] = 0;
+        }
+
+        dp[0][0] = board[0][0];
+        dp[1][0] = board[1][0];
+        mx = max(board[0][0], board[1][0]);
+        for(int i=1; i<T; i++){
+            dp[0][i] = max(board[0][i] + dp[1][i-1], dp[0][i-1]);
+            dp[1][i] = max(board[1][i] + dp[0][i-1], dp[1][i-1]);
+            mx = max({mx, dp[0][i], dp[1][i]});
+        }
+        cout << mx << "\n";
     }
-    cout << dp[N];
     return 0;
 }
